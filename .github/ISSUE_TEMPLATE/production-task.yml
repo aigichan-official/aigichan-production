@@ -1,6 +1,5 @@
 name: Production task
 description: A real production task for the Aigi-chan Shorts series
-title: ""
 body:
   - type: textarea
     attributes:
