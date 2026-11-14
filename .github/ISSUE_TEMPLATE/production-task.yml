@@ -1,0 +1,16 @@
+name: Production task
+description: A real production task for the Aigi-chan Shorts series
+title: ""
+body:
+  - type: textarea
+    attributes:
+      label: What needs doing
+      description: The task, in one or two sentences.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Done when
+      description: How we know it is finished.
+    validations:
+      required: true
