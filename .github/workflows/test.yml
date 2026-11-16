@@ -1,0 +1,24 @@
+# Demo workflow for GH08 (GitHub Actions episode).
+# The episode's performed run: a real push of this file to `main`
+# triggers this workflow, which runs the repo's real test.
+# Ruled filename: PR-2026-038 JOINT AGREEMENT (2026-11-17) — perform
+# as test.yml (stamped S04 card, §4/§9); §7's demo-tests.yml folded
+# one word by the Director (archive-first).
+name: Demo tests
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 20
+      - name: Run tests
+        run: npm test
