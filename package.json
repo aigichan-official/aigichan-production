@@ -1,0 +1,9 @@
+{
+  "name": "aigichan-production",
+  "version": "1.0.0",
+  "description": "Production tracker for the Aigi-chan GitHub Shorts series (demo repository for GH06 and GH08).",
+  "private": true,
+  "scripts": {
+    "test": "node --test"
+  }
+}
